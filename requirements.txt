@@ -1,0 +1,14 @@
+
+openai
+pyautogen
+azure-functions
+azure-cognitiveservices-search-websearch
+msrest
+azure-ai-vision-imageanalysis==1.0.0b1  
+azure-identity
+azure-core
+gradio
+requests
+beautifulsoup4
+html5lib
+python-dotenv

@@ -27,7 +27,7 @@ error_text = """Traceback (most recent call last):
     ^
 SyntaxError: expected 'except' or 'finally' block""" 
 
-def analyse_error(error):
+def analyze_error(error):
     try:
         response = client.chat.completions.create(
         stream=True,
@@ -39,13 +39,18 @@ def analyse_error(error):
         model=deployment,
         )
 
+        full_response = ""
         for update in response:
             if update.choices:
-                print(update.choices[0].delta.content or "", end="")
+                chunk = update.choices[0].delta.content or ""
+                full_response += chunk
+        #print(full_response) #hardcode testing
+        return full_response
+    
     except Exception as e:
         return f'[!] Fatal Error in LLM Module: {e} '
     
     
 
 
-analyse_error(error_text)
+#analyze_error(error_text) #hardcode testing 

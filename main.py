@@ -5,8 +5,8 @@ from app.handlers.web_search import fetch_web_sol
 
 custom_css = """
 #markdown_box {
-  height: 200px;
-  max-height: 500px;
+  height: 400px;
+  max-height: 600px;
   overflow-y: auto;
   border: 1px solid #ccc;
   padding: 10px;
@@ -49,6 +49,6 @@ with gr.Blocks(title="Bugnix Code Assistant", css=custom_css) as demo:
     )
 
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(share = True)
        
         

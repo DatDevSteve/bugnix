@@ -45,13 +45,13 @@ with input:
 with output:
     #empty = st.container(height=40, border=False)
     st.subheader("CODE ERROR ANALYSIS: ")
-    container = st.container(border=True, height=600)
+    container = st.container(border=True, height=610)
     st.write("version 1.0 MVP")
     if analyze_btn:
         if error_image is None:
             if error_text is not None:
                 container.write_stream(gpt_handler.analyze_error(error_text))
-        elif error_image is not None:
+        else:
             if error_text is not None:
                st.write(":red[PROVIDING ANALYSIS FOR CODE SNIPPET IMAGE OVER TEXT SNIPPET]")
                container.write_stream(gpt_handler.analyze_error(extracted_error)) #prefers image input over text input

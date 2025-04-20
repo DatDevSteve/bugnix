@@ -39,16 +39,15 @@ def analyze_error(error):
         model=deployment,
         )
 
-        full_response = ""
         for update in response:
             if update.choices:
                 chunk = update.choices[0].delta.content or ""
-                full_response += chunk
+                #full_response += chunk
         #print(full_response) #hardcode testing
-        return full_response
+                yield chunk
     
     except Exception as e:
-        return f'[!] Fatal Error in LLM Module: {e} '
+        yield f'[!] Fatal Error in LLM Module: {e} '
     
     
 

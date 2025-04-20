@@ -6,7 +6,7 @@ msrest
 azure-ai-vision-imageanalysis==1.0.0b1  
 azure-identity
 azure-core
-gradio
+streamlit
 requests
 beautifulsoup4
 html5lib

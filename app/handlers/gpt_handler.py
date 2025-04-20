@@ -16,7 +16,7 @@ client = AzureOpenAI(
     api_key=subscription_key,
 )
 
-with open("app/handlers/bugnix_context.txt", "r") as f:
+with open("app/handlers/bugnix_context.txt", "r", encoding="utf-8") as f:
     context = f.read()
 
 #hardcoded error:

@@ -74,9 +74,9 @@ STACKOVERFLOW_API_KEY= yourstackoverflowkey
 <br> 
 
 # 🖇 How it works?
- ➡ You upload a screenshot of your error or paste the error text and click <code>⏩ Analyze Error</code> Button 
- ➡ You can also try using a random test error by clicking on <code>❔ Try a Test Error</code> Button
- ➡ Bugnix will do it's magic by:
+ ➡ You upload a screenshot of your error or paste the error text and click <code>⏩ Analyze Error</code> Button <br>
+ ➡ You can also try using a random test error by clicking on <code>❔ Try a Test Error</code> Button <br>
+ ➡ Bugnix will do it's magic by: <br>
 -  Extracting the error text from the image using [OCR](https://azure.microsoft.com/en-us/products/ai-services/ai-vision) or grab the pasted error text.
 -  Feed it into the [LLM](https://azure.microsoft.com/en-us/products/ai-services/openai-service), generate interpretation of the error with solution.
 -  Ground it with [Stack Exchange API](https://api.stackexchange.com/).

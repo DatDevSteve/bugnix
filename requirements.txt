@@ -1,8 +1,6 @@
 openai
-pyautogen
 azure-functions
-azure-cognitiveservices-search-websearch
-msrest
+py-stackexchange
 azure-ai-vision-imageanalysis==1.0.0b1  
 azure-identity
 azure-core

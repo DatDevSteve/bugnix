@@ -14,9 +14,9 @@
 
 # 🛠 <b>Tech Stack</b>
 ### ⚙ <u>APIs Used:</u>
-- ### 👁 [Azure AI Vision](https://azure.microsoft.com/en-us/products/ai-services/ai-vision):<br> For extracting text from image snapshots of code error. 
-- ### 🧠 [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service): <br> LLM for processing the error and generating an explaination with solution. Uses GPT o3 mini as the model for processing.
-- ### 🔄 [Stack Exchange API](https://api.stackexchange.com/) (not implemented yet): <br> Refined error analysis and code grounding by integrating information from a flagship question-and-answer website for programmers.  
+-  👁 [Azure AI Vision](https://azure.microsoft.com/en-us/products/ai-services/ai-vision):<br> For extracting text from image snapshots of code error. 
+-  🧠 [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service): <br> LLM for processing the error and generating an explaination with solution. Uses GPT o3 mini as the model for processing.
+-  🔄 [Stack Exchange API](https://api.stackexchange.com/) (not implemented yet): <br> Refined error analysis and code grounding by integrating information from a flagship question-and-answer website for programmers.  
 
 ### ⚙ <u>Frontend:</u>
 - ### 💻 [Streamlit:](https://streamlit.io/) <br> Open Source Python Web Application Framework especially designed to deploy Generative A.I. based web applications.

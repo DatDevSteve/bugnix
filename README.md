@@ -4,11 +4,11 @@
 
 # 💡 <b>Overview</b>
 ### Check out the app here: <https://bugnix.streamlit.app>
-### Bugnix is a powerful and efficient generative A.I. based code error analyzer and interpretor to make code debugging simpler
+#### Bugnix is a powerful and efficient generative A.I. based code error analyzer and interpretor to make code debugging simpler
 
-### Powered by [Microsoft's Azure AI](https://azure.microsoft.com/en-in/solutions/ai/), Bugnix is made under specific consideration of beginner level programmers, who find programming jargon an overwhelming experience, as well as for all the other programmers who find code debugging a tedious process.
+#### Powered by [Microsoft's Azure AI](https://azure.microsoft.com/en-in/solutions/ai/), Bugnix is made under specific consideration of beginner level programmers, who find programming jargon an overwhelming experience, as well as for all the other programmers who find code debugging a tedious process.
 
-### Trained on code errors from famous programming languages, Bugnix analyses the error fed by the user, and provides a simple explaination of the error.
+#### Trained on code errors from famous programming languages, Bugnix analyses the error fed by the user, and provides a simple explaination of the error.
 <br>
 <br>
 

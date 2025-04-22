@@ -2,6 +2,18 @@
   <img src="image.png" />
 </p>
 
+# 📃 Contents:
+-  [💡 Overview](https://github.com/DatDevSteve/bugnix?tab=readme-ov-file#-overview)
+-  [🛠 Tech Stack](https://github.com/DatDevSteve/bugnix?tab=readme-ov-file#-tech-stack)
+-  [📥 Setting Up a Local Instance](https://github.com/DatDevSteve/bugnix?tab=readme-ov-file#-setting-up-a-local-instance)
+-  [🖇 How it works?](https://github.com/DatDevSteve/bugnix?tab=readme-ov-file#-how-it-works)
+-  [🧩 Known Issues](https://github.com/DatDevSteve/bugnix?tab=readme-ov-file#-known-issues)
+-  [🧭 Bugnix Roadmap](https://github.com/DatDevSteve/bugnix?tab=readme-ov-file#-bugnix-roadmap)
+-  [⭐ Credits](https://github.com/DatDevSteve/bugnix?tab=readme-ov-file#-credits)
+
+<br>
+<br>
+
 # 💡 <b>Overview</b>
 ### Check out the app here: <https://bugnix.streamlit.app>
 #### Bugnix is a powerful and efficient generative A.I. based code error analyzer and interpretor to make code debugging simpler
@@ -26,7 +38,7 @@
 <br>
 <br>
 
-# 📥 <b>Installation Instructions</b>
+# 📥 <b>Setting Up a Local Instance</b>
 ### 💿 <u>Requirements:</u>
 -  Python (version 3.10+): To execute and run the app
 -  Any operating system (Windows, MacOS, Linux)

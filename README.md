@@ -96,7 +96,7 @@ STACKOVERFLOW_API_KEY= yourstackoverflowkey
 # 🧭 Bugnix Roadmap:
   ✅ OCR and LLM Integration.<br>
   ✅ Stack Overflow Codebase Grounding.<br>
-  ⬜ Support for User Accounts to save error interpretations.<br>
+  ⬜ Better User Interface.<br>
   ⬜ Better Performance<br>
 
 <br>

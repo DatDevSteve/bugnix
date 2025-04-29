@@ -41,7 +41,7 @@ with input:
 with output:
     st.subheader("CODE ERROR ANALYSIS: ")
     container = st.container(border=True, height=610)
-    st.write("version 1.0 for Microsoft AI Agents Hackathon")
+    st.write("version 1.0 for Microsoft AI Agents Hackathon 2025")
     if analyze_btn:
         if error_image is None:
             if error_text is not None:

@@ -3,10 +3,27 @@ from app.handlers import ocr_handler
 from app.handlers import gpt_handler
 
 #web app config
-st.set_page_config(
-    layout="wide",
-    page_title="Bugnix: AI Debugging"
-)
+st.set_page_config(layout="wide",page_title="Bugnix: AI Debugging")
+hide_streamlit_style = """
+    <style>
+    /* Hide sidebar completely */
+    [data-testid="stSidebar"] {
+        display: none;
+    }
+    /* Hide sidebar collapse < button */
+    [data-testid="collapsedControl"] {
+        display: none;
+    }
+    /* Additional fix: hide the expand/collapse floating button */
+    .css-1fttcpj.e1fqkh3o3 {
+        visibility : hidden;
+    }
+    header, footer {
+        visibility: hidden ;
+    }
+    </style>
+    """
+#st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 #hardcode for debugging:
 error_sample = """Traceback (most recent call last):
@@ -37,8 +54,8 @@ with input:
     erroVal = ""
     error_text = st.text_area(label=" ",placeholder="Copy & Paste your error here", height=350, value=erroVal, key="user_input") 
     
-    analyze_btn = st.button(type="primary",label="Analyze Error", icon="⏩" )
-    random_btn = st.button(type="primary", label="Try a Test Error", icon="❔")
+    analyze_btn = st.button(type="primary",label="Analyze Error", icon="⏩", use_container_width=True )
+    random_btn = st.button(type="primary", label="Try a Test Error", icon="❔", use_container_width=True)
 
 
 
@@ -46,6 +63,7 @@ with output:
     #empty = st.container(height=40, border=False)
     st.subheader("CODE ERROR ANALYSIS: ")
     container = st.container(border=True, height=610)
+    newUI = st.button("Go back to New UI", use_container_width= True)
     st.write("version 1.0 MVP")
     if analyze_btn:
         if error_image is None:
@@ -60,3 +78,6 @@ with output:
         
     if random_btn:
         container.write_stream(gpt_handler.analyze_error(random_error))
+    
+    if newUI:
+        st.switch_page("pages/Interactive.py")

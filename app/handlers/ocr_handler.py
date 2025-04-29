@@ -29,7 +29,8 @@ def extract_text(image_path: str) -> str:
                     lines.append(line.text)
             final_result = "\n".join(lines)
             #print(final_result) # for hardcode testing
-            return final_result
+            with open("errorImg.txt", "w") as file:
+                file.write(final_result)
     except Exception as e:
         return f'OCR ERROR: {str(e)}'
     

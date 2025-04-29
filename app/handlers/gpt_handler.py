@@ -25,7 +25,7 @@ error_text = """Traceback (most recent call last):
     from app.handlers.ocr_handler import extract_text
   File "/mnt/.../ocr_handler.py", line 24
     ^
-SyntaxError: expected 'except' or 'finally' block""" 
+SyntaxError: expected 'except' or 'finally' block"""  
 
 def analyze_error(error):
     try:
@@ -49,7 +49,7 @@ def analyze_error(error):
     except Exception as e:
         yield f'[!] Fatal Error in LLM Module: {e} '
     
-    
+
 
 
 #analyze_error(error_text) #hardcode testing 

@@ -18,7 +18,7 @@
 ### Check out the app here: <https://bugnix.streamlit.app>
  Bugnix is a powerful and efficient generative A.I. based code error analyzer and interpretor to make code debugging simpler
 
-Powered by [Microsoft's Azure AI](https://azure.microsoft.com/en-in/solutions/ai/), Bugnix is made under specific consideration of beginner level programmers, who find programming jargon an overwhelming experience, as well as for all the other programmers who find code debugging a tedious process.
+Powered by [Microsoft's Azure AI](https://azure.microsoft.com/en-in/solutions/ai/) and [Azure Computer Vision](), Bugnix is made under specific consideration of beginner level programmers, who find programming jargon an overwhelming experience, as well as for all the other programmers who find code debugging a tedious process.
 
 Trained on code errors from famous programming languages, Bugnix analyses the error fed by the user, and provides a simple explaination of the error.
 <br>
@@ -28,7 +28,7 @@ Trained on code errors from famous programming languages, Bugnix analyses the er
 ### ⚙ <u>APIs Used:</u>
 -  👁 [Azure AI Vision](https://azure.microsoft.com/en-us/products/ai-services/ai-vision):<br> For extracting text from image snapshots of code error. 
 -  🧠 [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service): <br> LLM for processing the error and generating an explaination with solution. Uses GPT o3 mini as the model for processing.
--  🔄 [Stack Exchange API](https://api.stackexchange.com/) (not implemented yet): <br> Refined error analysis and code grounding by integrating information from a flagship question-and-answer website for programmers.  
+  
 
 ### ⚙ <u>Frontend:</u>
 - 💻 [Streamlit:](https://streamlit.io/) <br> Open Source Python Web Application Framework especially designed to deploy Generative A.I. based web applications.
@@ -76,10 +76,9 @@ STACKOVERFLOW_API_KEY= yourstackoverflowkey
 # 🖇 How it works?
  ➡ You upload a screenshot of your error or paste the error text and click <code>⏩ Analyze Error</code> Button <br>
  ➡ You can also try using a random test error by clicking on <code>❔ Try a Test Error</code> Button <br>
- ➡ Bugnix will do it's magic by: <br>
+ ➡ Bugnix will do it's magic by:
 -  Extracting the error text from the image using [OCR](https://azure.microsoft.com/en-us/products/ai-services/ai-vision) or grab the pasted error text.
 -  Feed it into the [LLM](https://azure.microsoft.com/en-us/products/ai-services/openai-service), generate interpretation of the error with solution.
--  Ground it with [Stack Exchange API](https://api.stackexchange.com/).
 -  Return the generated output on your screen.
 <br>
 <br>
@@ -93,9 +92,9 @@ STACKOVERFLOW_API_KEY= yourstackoverflowkey
 <br>
 <br> 
 
-# 🧭 Bugnix Roadmap:
+# 🧭 Bugnix Roadmap for Future Updates:
   ✅ OCR and LLM Integration.<br>
-  ✅ Stack Overflow Codebase Grounding.<br>
+  ⬜ Codebase Grounding.<br>
   ⬜ Better User Interface.<br>
   ⬜ Better Performance<br>
 
